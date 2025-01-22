@@ -1,0 +1,1 @@
+I plan to use this repository for practicing with git. Also this is part of the first assignment for CSCI325.
