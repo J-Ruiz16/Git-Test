@@ -31,6 +31,26 @@ int sum(int n){
   return x;
 }
 
+
+/**
+ * Calculates the product of 1 through n
+ *
+ * @param int n number of integer 
+ * @pre 
+ * @return int return an the total product as integer x
+ * @post 
+ * 
+ */
+int product(int n){
+  int y = 1;
+
+  for (int i = 1; i <= n; i++){
+    y *= i;
+  }
+
+  return y;
+}
+
 int main() {
 
   int num;
@@ -39,8 +59,10 @@ int main() {
   std::cin >> num;
 
   int total = sum(num);
+  int totalTwo = product(num);
 
   std::cout << "The sum of numbers 1 to " << num << " is: " << total << std::endl;
+  std::cout << "The product of numbers 1 to " << num << " is: " << totalTwo << std::endl;
   
   return 0;
 }
